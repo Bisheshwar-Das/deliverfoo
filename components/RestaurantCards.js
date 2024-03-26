@@ -14,10 +14,10 @@ const RestaurantCards = ({id,
     long, 
     lat}) => {
   return (
-    <TouchableOpacity className="bg-white  m-3">
+    <TouchableOpacity className="bg-white  m-3 w-64">
         <Image 
             source={{uri: urlFor(imgUrl).url()}}
-            className="h-36  w-64 rounded-sm"
+            className="h-36  w-64 rounded-sm "
         />
         <View className="px-3 pb-4">
             <Text className="font-bold text-lg pt-2">{title}</Text>
