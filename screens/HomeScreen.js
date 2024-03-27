@@ -69,14 +69,17 @@ const HomeScreen = () => {
                 {/* Categories */}
                 <Categories/>
                 {/* Features */}
+                <View className="pb-40">
+
                 {featuredCategories?.map(category =>(
-                <FeaturedRow 
+                <FeaturedRow  
                     key={category._id}
                     id={category._id}
                     title={category.name} 
                     description={category.short_description} 
                     />
                 ))}
+                </View>
             </ScrollView>
     </SafeAreaView>
   )
